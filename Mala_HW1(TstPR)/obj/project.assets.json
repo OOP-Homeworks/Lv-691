@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1.Оксана\\Оксана.Шаг\\Шаг\\Visual Studio_myWrks\\SSOOp\\Mala_HW1(PR)\\Lv-691\\Mala_HW1(TstPR)\\Mala_HW1(TstPR).csproj",
-      "projectName": "Mala_HW1(TstPR)",
-      "projectPath": "D:\\1.Оксана\\Оксана.Шаг\\Шаг\\Visual Studio_myWrks\\SSOOp\\Mala_HW1(PR)\\Lv-691\\Mala_HW1(TstPR)\\Mala_HW1(TstPR).csproj",
+      "projectUniqueName": "D:\\1.Оксана\\Оксана.Шаг\\Шаг\\Visual Studio_myWrks\\SSOOp\\Mala_HW1(PR)\\Lv-691\\Mala_HW1(TstPR)\\Mala_Task1.csproj",
+      "projectName": "Mala_Task1",
+      "projectPath": "D:\\1.Оксана\\Оксана.Шаг\\Шаг\\Visual Studio_myWrks\\SSOOp\\Mala_HW1(PR)\\Lv-691\\Mala_HW1(TstPR)\\Mala_Task1.csproj",
       "packagesPath": "C:\\Users\\Админ\\.nuget\\packages\\",
       "outputPath": "D:\\1.Оксана\\Оксана.Шаг\\Шаг\\Visual Studio_myWrks\\SSOOp\\Mala_HW1(PR)\\Lv-691\\Mala_HW1(TstPR)\\obj\\",
       "projectStyle": "PackageReference",

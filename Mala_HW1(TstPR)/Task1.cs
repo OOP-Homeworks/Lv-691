@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mala_HW1_TstPR_
+namespace Mala_HW1
 {
     internal class Task1
     {
