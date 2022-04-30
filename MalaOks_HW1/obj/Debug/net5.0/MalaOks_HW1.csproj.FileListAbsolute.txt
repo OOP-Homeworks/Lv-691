@@ -1,0 +1,16 @@
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\MalaOks_HW1.csproj.AssemblyReference.cache
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\MalaOks_HW1.GeneratedMSBuildEditorConfig.editorconfig
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\MalaOks_HW1.AssemblyInfoInputs.cache
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\MalaOks_HW1.AssemblyInfo.cs
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\MalaOks_HW1.csproj.CoreCompileInputs.cache
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\bin\Debug\net5.0\MalaOks_HW1.exe
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\bin\Debug\net5.0\MalaOks_HW1.deps.json
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\bin\Debug\net5.0\MalaOks_HW1.runtimeconfig.json
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\bin\Debug\net5.0\MalaOks_HW1.runtimeconfig.dev.json
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\bin\Debug\net5.0\MalaOks_HW1.dll
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\bin\Debug\net5.0\MalaOks_HW1.pdb
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\MalaOks_HW1.dll
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\refint\MalaOks_HW1.dll
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\MalaOks_HW1.pdb
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\MalaOks_HW1.genruntimeconfig.cache
+D:\1.Оксана\Оксана.Шаг\Шаг\Visual Studio_myWrks\SSOOp\Mala_HW1(PR)\Lv-691\MalaOks_HW1\obj\Debug\net5.0\ref\MalaOks_HW1.dll
