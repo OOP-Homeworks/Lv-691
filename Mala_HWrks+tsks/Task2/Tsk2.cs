@@ -30,7 +30,6 @@ namespace Task2
             Console.WriteLine($"number like 3.456 or 77.8788");
             double num = Convert.ToDouble(Console.ReadLine());
 
-
             //изменила решение, т.к. при использовании ниже указанной формулы
             //происходит усечение введенного числа до вычислений.
             //Т.е.введенное число double сначала приведется к int затем проводятся вычисления,
@@ -58,7 +57,6 @@ namespace Task2
                 ((((hour >= 22) && (hour < 24)) || ((hour >= 0) && (hour < 5))) ? "Good night" : "Please enter in 24 hour format, like 11:15 or 21:00")));
             Console.WriteLine(greeting);
         }
-
 
 
         static void Main(string[] args)
