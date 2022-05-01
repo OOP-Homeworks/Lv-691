@@ -29,7 +29,7 @@ namespace Task2
         {
             Console.WriteLine($"number like 3.456 or 77.8788");
             double num = Convert.ToDouble(Console.ReadLine());
-            double desiredVal = (num * 100) % 100;
+
 
             //изменила решение, т.к. при использовании ниже указанной формулы
             //происходит усечение введенного числа до вычислений.
@@ -42,7 +42,8 @@ namespace Task2
 
             //int desiredVal = (int)(num * 100) % 100;
             //Console.WriteLine($"desiredVal is {desiredVal}");
-
+            
+            double desiredVal = (num * 100) % 100;
             int result = (int)desiredVal / 10 + (int)desiredVal % 10;
             Console.WriteLine($"Result is {result}");
         }
