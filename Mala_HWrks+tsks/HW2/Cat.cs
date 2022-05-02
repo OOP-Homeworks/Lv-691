@@ -25,7 +25,7 @@ namespace HW2
             if (Enum.IsDefined(typeof(CatFood), input))
             {
                 SatietyLevel = (int)Enum.Parse(typeof(CatFood), input);
-                Console.WriteLine("The cat ate {0} and the satiety level is {1}%", input, SatietyLevel);
+                Console.WriteLine($"The cat ate {input} and the satiety level is {SatietyLevel}%");
             }
             else
             {
