@@ -33,16 +33,21 @@ namespace HW2
             //myError.WhatIsError(num);
 
             //2.4
-            DogStruct dog = new();
-            Console.WriteLine("Please enter dog name");
-            dog.Name = Console.ReadLine();
-            Console.WriteLine("Please enter dog mark");
-            dog.Mark = Console.ReadLine();
-            Console.WriteLine("Please enter dog age");
-            dog.Age = Console.ReadLine();
-            Console.WriteLine(dog); 
-            
+            //DogStruct dog = new();
+            //Console.WriteLine("Please enter dog name");
+            //dog.Name = Console.ReadLine();
+            //Console.WriteLine("Please enter dog mark");
+            //dog.Mark = Console.ReadLine();
+            //Console.WriteLine("Please enter dog age");
+            //dog.Age = Console.ReadLine();
+            //Console.WriteLine(dog);
+
             //2.5
+            Console.WriteLine("Feed your cat, available food: meat, fish, chicken, dry food, wet food" +
+                "Enter the name of the cat food");
+            string input = Console.ReadLine()?.ToLower().Replace(" ","");
+            Cat kitty = new();
+            kitty.SomethingToEat(input);
 
         }
     }
