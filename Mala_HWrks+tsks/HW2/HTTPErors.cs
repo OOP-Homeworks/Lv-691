@@ -19,23 +19,23 @@ namespace HW2
         
         public void WhatIsError(int num)
         {
-            HttpErrors myError; //= HttpErrors.BadRequest;
+            //HttpErrors myError; //= HttpErrors.BadRequest;
             switch (num)
             {
                 case (int)HttpErrors.BadRequest:
-                    Console.WriteLine(myError = HttpErrors.BadRequest);
+                    Console.WriteLine(HttpErrors.BadRequest);
                     break;
                 case (int)HttpErrors.Unauthorized:
-                    Console.WriteLine(myError = HttpErrors.Unauthorized);
+                    Console.WriteLine(HttpErrors.Unauthorized);
                     break;
                 case (int)HttpErrors.PaymentRequerd:
-                    Console.WriteLine(myError = HttpErrors.Unauthorized);
+                    Console.WriteLine(HttpErrors.PaymentRequerd);
                     break;
                 case (int)HttpErrors.Forbidden:
-                    Console.WriteLine(myError = HttpErrors.Unauthorized);
+                    Console.WriteLine(HttpErrors.Forbidden);
                     break;
                 case (int)HttpErrors.NotFound:
-                    Console.WriteLine(myError = HttpErrors.Unauthorized);
+                    Console.WriteLine(HttpErrors.NotFound);
                     break;
                 default:
                     break;
