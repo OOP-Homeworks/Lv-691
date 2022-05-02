@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mala_HW1
+namespace MalaOks_Task1
 {
     internal class Task1
     {
