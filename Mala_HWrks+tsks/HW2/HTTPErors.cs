@@ -19,7 +19,6 @@ namespace HW2
         
         public void WhatIsError(int num)
         {
-            //HttpErrors myError; //= HttpErrors.BadRequest;
             switch (num)
             {
                 case (int)HttpErrors.BadRequest:

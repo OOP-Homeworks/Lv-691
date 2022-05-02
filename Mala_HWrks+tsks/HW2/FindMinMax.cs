@@ -7,14 +7,7 @@ using System.Threading.Tasks;
 namespace HW2
 {
     internal class FindMinMax
-    {
-        //private bool Compare(int num1, int num2)
-        //{
-        //    if (num1 > num2)
-        //    {
-        //        true; 
-        //    }
-        //}
+    {        
         public void MinMax(params int[] nums)
         {
             int min = nums[0];
@@ -31,7 +24,6 @@ namespace HW2
                 }
             }
             Console.WriteLine($"Min: {min}, Max: {max}");
-
         }
     }
 }
