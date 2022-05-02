@@ -28,7 +28,15 @@ namespace HW2
                 case (int)HttpErrors.Unauthorized:
                     Console.WriteLine(myError = HttpErrors.Unauthorized);
                     break;
-
+                case (int)HttpErrors.PaymentRequerd:
+                    Console.WriteLine(myError = HttpErrors.Unauthorized);
+                    break;
+                case (int)HttpErrors.Forbidden:
+                    Console.WriteLine(myError = HttpErrors.Unauthorized);
+                    break;
+                case (int)HttpErrors.NotFound:
+                    Console.WriteLine(myError = HttpErrors.Unauthorized);
+                    break;
                 default:
                     break;
             }
