@@ -27,10 +27,22 @@ namespace HW2
             //findMaxMin.MinMax(firstNum, secondNum, thirdNum);
 
             //2.3
-            Console.WriteLine("Please enter number of error to now its meaning");
-            int num = int.Parse(Console.ReadLine());
-            HTTPErors myError = new();
-            myError.WhatIsError(num);
+            //Console.WriteLine("Please enter number of error to know its meaning");
+            //int num = int.Parse(Console.ReadLine());
+            //HTTPErors myError = new();
+            //myError.WhatIsError(num);
+
+            //2.4
+            DogStruct dog = new();
+            Console.WriteLine("Please enter dog name");
+            dog.Name = Console.ReadLine();
+            Console.WriteLine("Please enter dog mark");
+            dog.Mark = Console.ReadLine();
+            Console.WriteLine("Please enter dog age");
+            dog.Age = Console.ReadLine();
+            Console.WriteLine(dog); 
+            
+            //2.5
 
         }
     }

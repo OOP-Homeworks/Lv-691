@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace HW2
 {
-    internal class DogStruct
+    internal struct DogStruct
     {
-        struct Dog
+
+        public string Name;
+        public string Mark;
+        public string Age;
+        public override string ToString()
         {
-            public string Name; 
-            public string Mark;
-            public string Age;
-            public override string ToString()
-            {
-                return string.Format($"Dog name: {Name},dog mark: {Mark}, dog age: {Age}");
-            }
+            return string.Format($"Dog name: {Name},dog mark: {Mark}, dog age: {Age}");
         }
     }
 }
