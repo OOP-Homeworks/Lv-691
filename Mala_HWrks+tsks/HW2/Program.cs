@@ -6,7 +6,7 @@ namespace HW2
     {
         static void Main(string[] args)
         {
-            //1.1
+            //2.1
             //Console.WriteLine("Please enter three three decimal numbers one by one" + 
             //    "After entering each number, press 'Enter'");
             //float firstNum = float.Parse(Console.ReadLine());
@@ -17,7 +17,7 @@ namespace HW2
             //checkNum.ChekNumIsInRange(firstNum, secondNum, thirdNum);
 
 
-            //1.2
+            //2.2
             //Console.WriteLine("Please enter three integer numbers one by one" +
             //    "After entering each number, press 'Enter'");
             //int firstNum = int.Parse(Console.ReadLine());
@@ -26,7 +26,7 @@ namespace HW2
             //FindMinMax findMaxMin = new();
             //findMaxMin.MinMax(firstNum, secondNum, thirdNum);
 
-            //1.3
+            //2.3
             Console.WriteLine("Please enter number of error to now its meaning");
             int num = int.Parse(Console.ReadLine());
             HTTPErors myError = new();
