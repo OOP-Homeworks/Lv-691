@@ -43,11 +43,38 @@ namespace HW2
             //Console.WriteLine(dog);
 
             //2.5
-            Console.WriteLine("Feed your cat, available food: meat, fish, chicken, dry food, wet food" +
-                "Enter the name of the cat food");
-            string input = Console.ReadLine()?.ToLower().Replace(" ","");
-            Cat kitty = new();
-            kitty.SomethingToEat(input);
+            //Console.WriteLine("Feed your cat, available food: meat, fish, chicken, dry food, wet food" +
+            //    "Enter the name of the cat food");
+            //string input = Console.ReadLine()?.ToLower().Replace(" ","");
+            //Cat kitty = new();
+            //kitty.SomethingToEat(input);
+
+            //2.6
+            Console.WriteLine("There are two groups of students on the list. Group 11 and group 17");
+            Console.WriteLine("View the list of students in the group 11 - enter 1 \n " +
+                "View the list of students in the group 17 - enter 2 \n " +
+                "Find a student by group number and the first letter in the last name - enter 3");
+            string choise = Console.ReadLine();
+            ListStudent lst = new();
+            switch (choise)
+            {
+                case "1":
+                    lst.ListStudentByGroupNumber("11");
+                    break;
+                case "2":
+                    lst.ListStudentByGroupNumber("17");
+                    break;
+                case "3":
+                    Console.WriteLine("Enter group number");
+                    string grp = Console.ReadLine();
+                    Console.WriteLine("Enter first letter in the last name of seeking student");
+                    string lt = Console.ReadLine();
+                    lst.FindStudentByGrpNumLastName(grp,lt);
+                    break;
+                default:
+                    Console.WriteLine("Wrong input");
+                    break;
+            }
 
         }
     }
