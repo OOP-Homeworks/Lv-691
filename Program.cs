@@ -1,80 +1,92 @@
 ﻿using System;
 
-namespace hw2
+namespace hw3
 {
     class Program
     {
-            enum HTTPError
-            {
-               BadRequest=400,
-               Unauthorized,
-               PaymentRequired,
-               Forbidden,
-               NotFound,
-               MethodNotAllowed,
-              NotAcceptable,
-        }
-            struct Dog
-            {
-                public string name;
-                public string mark;
-                public int age;
-
-                public override string ToString()
-            {
-                return string.Format($"Name: {name}\nMark: {mark}\nAge: {age}");
-            }
-            }
         static void Main(string[] args)
         {
-            Console.WriteLine("1)");
-            bool check(float num)
+            // ~~~~~~~~~~~~~~task 1~~~~~~~~~~~~~~~~~~~~
+            Console.WriteLine("Input string please: ");
+            string str =Console.ReadLine();
+            str = str.ToLower();
+            int count = 0;
+            for (int i = 0 ; i<str.Length; i++)
             {
-                return (num >= -5 && num <= 5);
+                if (str[i] == 'a'|| str[i] == 'o'|| str[i] == 'i'|| str[i] == 'a') count++;
             }
-            Console.WriteLine("enter three float num: ");
-            float num1 = Single.Parse(Console.ReadLine());
-            float num2 = Single.Parse(Console.ReadLine());
-            float num3 = Single.Parse(Console.ReadLine());
-            Console.WriteLine(check(num1) ? "num1 is in the range " : "num1 is not in the range");
-            Console.WriteLine(check(num2) ? "num2 is in the range " : "num2 is not in the range");
-            Console.WriteLine(check(num3) ? "num3 is in the range " : "num3 is not in the range");
+            Console.WriteLine($"Answer:{count} \n");
 
-            Console.WriteLine("2)");
-            Console.WriteLine("enter three integers: ");
-            int max(int num1, int num2, int num3)
+            // ~~~~~~~~~~~~~~task 2~~~~~~~~~~~~~~~~~~~~
+
+            bool right_input = false;
+            while(!right_input)
             {
-                if (num1 >= num2 && num1 >= num3) return num1;
-                else if (num2 >= num1 && num2 >= num3) return num2;
-                else if (num3 >= num1 && num3 >= num2) return num3;
-                return 0; //without this Error  not all code paths return a value 
+                Console.WriteLine("Enter number of your month");
+                int month = System.Convert.ToInt32(Console.ReadLine());
 
+                switch(month)
+                {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12:
+                        Console.WriteLine("This month has 31 days");
+                        right_input = true;
+                        break;
+                    case 4:
+                    case 6:
+                    case 9:
+                    case 11:
+                        Console.WriteLine("This month has 30 days");
+                        right_input = true;
+                        break;
+                    case 2:
+                        Console.WriteLine("This month has 28 or even 29 days");
+                        right_input = true;
+                        break;
+                    default:
+                        Console.WriteLine("Wrong input. Let's try again ");
+                        break;
+                }
             }
-            int min(int num1, int num2, int num3)
+            // ~~~~~~~~~~~~~~task 3~~~~~~~~~~~~~~~~~~~~
+            Console.WriteLine("Enter 10 numbers: ");
+
+            int[] arr = new int[10];
+            int first_positive = 0;
+            for (int i=0; i<10; i++)
             {
-                if (num1 <= num2 && num1 <= num3) return num1;
-                else if (num2 <= num1 && num2 <= num3) return num2;
-                else if (num3 <= num1 && num3 <= num2) return num3;
-                return 0; //without this Error  not all code paths return a value 
+                int n = System.Convert.ToInt32(Console.ReadLine());
+                arr[i] = n;
+                while(i<5)
+                {
+                   if(n>0) first_positive++;
+                    break;
+                }
             }
-            int first = Convert.ToInt32(Console.ReadLine());
-            int second = Convert.ToInt32(Console.ReadLine());
-            int third = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Max: { max(first, second, third)}");
-            Console.WriteLine($"Min: { min(first, second, third)}");
-
-            Console.WriteLine("3)");
-            Console.WriteLine("Enter num of HTTP error (400, ..., 406");
-            int errornum = Convert.ToInt32(Console.ReadLine());
-            HTTPError error =(HTTPError) errornum;
-            Console.WriteLine( error);
-
-            Console.WriteLine("4)");
-            Dog myDog;
-            myDog.name = "Javelin";
-            myDog.mark = "Amerikana";
-            myDog.age = 8;
-            Console.WriteLine(myDog);
+            if(first_positive==5)
+            {
+            int sum = 0;
+                for (int i = 0; i < 5; i++)
+                {
+                    sum += arr[i];
+                }
+                Console.WriteLine($"Answer: {sum}");
+            }
+            else
+            {
+            int prod = 1;
+                for (int i = 9; i >= 5; i--)
+                {
+                    prod *= arr[i];
+                }
+                Console.WriteLine($"Answer: {prod}");
+            }
+          
         }
     }
 }
