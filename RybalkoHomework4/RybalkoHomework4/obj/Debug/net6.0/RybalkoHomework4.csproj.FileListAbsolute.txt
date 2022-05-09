@@ -1,0 +1,15 @@
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\bin\Debug\net6.0\RybalkoHomework4.exe
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\bin\Debug\net6.0\RybalkoHomework4.deps.json
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\bin\Debug\net6.0\RybalkoHomework4.runtimeconfig.json
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\bin\Debug\net6.0\RybalkoHomework4.dll
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\bin\Debug\net6.0\ref\RybalkoHomework4.dll
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\bin\Debug\net6.0\RybalkoHomework4.pdb
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\RybalkoHomework4.csproj.AssemblyReference.cache
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\RybalkoHomework4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\RybalkoHomework4.AssemblyInfoInputs.cache
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\RybalkoHomework4.AssemblyInfo.cs
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\RybalkoHomework4.csproj.CoreCompileInputs.cache
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\RybalkoHomework4.dll
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\ref\RybalkoHomework4.dll
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\RybalkoHomework4.pdb
+C:\Users\wylf1\source\repos\RybalkoHomework4\RybalkoHomework4\obj\Debug\net6.0\RybalkoHomework4.genruntimeconfig.cache
