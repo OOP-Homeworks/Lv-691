@@ -1,53 +1,49 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace hw4
+namespace hw5
 {
     class Program
     {
-        public static void Output(Person[] arr, int size)
-        {
-            for (int i = 0; i < size; i++)
-            {
-                System.Console.WriteLine(arr[i].ToString());
-            }
-        }
         static void Main(string[] args)
         {
-            Person first = new Person();
-            Person second = new Person("Richard", new DateTime(2006,10,23));
-            Person third = new Person(second);
-            int size = 6;
-            Person[] array = new Person[size];
-            array[0] = first;
-            array[1] = second;
-            array[2] = third;
+            List<IDeveloper> myList = new List<IDeveloper>();
+            myList.Add(new Programmer("C#"));
+            myList.Add(new Builder("Bolharka"));
+            myList.Add(new Builder("Sokyra"));
+            myList.Add(new Programmer("C++"));
+            myList.Add(new Programmer("Python"));
+            myList.Add(new Builder("Pylka"));
+            myList.Sort();
 
-            for(int i=3; i<size; i++)
+            //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Dictionary<uint, string> myd=new Dictionary<uint, string>();
+            for (int i=0; i<7; i++)
             {
-                Person temp = new Person();
-                Console.WriteLine($"Enter {i+1} person's name and date of birth (dd/mm/yyyy)");
-                temp.Name = Console.ReadLine();
-                temp.BirthYear = Convert.ToDateTime(Console.ReadLine());
-                array[i] = temp;
+                Console.WriteLine("Enter ID and people name:");
+                uint id= (uint)Convert.ToInt32(Console.ReadLine());
+                string name = Console.ReadLine();
+                myd.Add(id, name);
             }
-            for (int i = 0; i < size; i++)
+
+            Console.WriteLine("Enter ID to get people name:");
+            uint k = (uint)Convert.ToInt32(Console.ReadLine());
+            bool found = false;
+            foreach (KeyValuePair<uint, string> el in myd)
             {
-                Console.WriteLine($"{array[i].Name} is {array[i].Age()} years old ");
-            }
-            for (int i = 0; i < size; i++)
-            {
-                if (array[i].Age() < 16) array[i].Name = "Very Young";
-            }
-            Output(array, size);
-            for (int i = 0; i < size; i++)
-            {
-                for (int j = i+1; j < size; j++) 
+                if (el.Key == k)
                 {
-                    if (array[i] == array[j])
-                    {
-                        Console.WriteLine($"Person {i+1} and persone {j+1} have the same name.");
-                    }
+                    Console.WriteLine($"Name: {el.Value}");
+                    found = true;
                 }
+            }
+            try
+            {
+                if (!found) throw new ArgumentException("Element does not exits");
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
     }
