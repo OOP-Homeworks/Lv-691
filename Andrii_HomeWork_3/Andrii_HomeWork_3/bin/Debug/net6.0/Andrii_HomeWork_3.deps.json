@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Andrii_HomeWork_3/1.0.0": {
+        "runtime": {
+          "Andrii_HomeWork_3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Andrii_HomeWork_3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
