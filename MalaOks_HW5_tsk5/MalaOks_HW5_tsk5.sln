@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mala_HW5", "Mala_HW5\Mala_HW5.csproj", "{04BC136A-F0CE-43D5-8335-39E3E5069C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mala_tsk5", "Mala_tsk5\Mala_tsk5.csproj", "{0F605DEC-7F8F-4105-B346-15A57BE995FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04BC136A-F0CE-43D5-8335-39E3E5069C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BC136A-F0CE-43D5-8335-39E3E5069C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BC136A-F0CE-43D5-8335-39E3E5069C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BC136A-F0CE-43D5-8335-39E3E5069C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F605DEC-7F8F-4105-B346-15A57BE995FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F605DEC-7F8F-4105-B346-15A57BE995FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F605DEC-7F8F-4105-B346-15A57BE995FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F605DEC-7F8F-4105-B346-15A57BE995FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB8A48D1-912F-4663-99CD-F0091140DF81}
+	EndGlobalSection
+EndGlobal
