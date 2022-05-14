@@ -1,38 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-
-namespace hw5
+namespace Homework_5
 {
-    class Programmer: IDeveloper, IComparable<IDeveloper>
+    public class Programmer: IDeveloper, IComparable<IDeveloper>
     {
         string language;
-       public Programmer()
-        {
-            language = "none";
-        }
-        public Programmer(string l)
-        {
-            language = l;
-        }
         public string Tool
         {
             get { return language; }
             set { language = value; }
         }
-        void IDeveloper.Create()
+
+        public Programmer(string language)
         {
-            Console.WriteLine($"Programmer created application on {language} programming language");
+            this.language = language;
         }
-        void IDeveloper.Destroy()
+
+        public void Create()
         {
-            Console.WriteLine("Programmer have destroyed prodaction");
+            Console.WriteLine("Programmer can create a project using {0} language", language);
+        }
+
+        public void Destroy()
+        {
+            Console.WriteLine("Programmer can destroy programm");
         }
         int IComparable<IDeveloper>.CompareTo(IDeveloper other)
         {
-            return String.Compare(this.Tool, other.Tool);
+            return string.Compare(this.Tool, other.Tool);
         }
-
     }
 }
