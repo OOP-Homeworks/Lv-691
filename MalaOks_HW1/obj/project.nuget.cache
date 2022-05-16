@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5LdZ9Hc8Ejn6NGyJxgeGuZFXCCcOhvwxpjIY1KiZzo7JoxskciJpURPElNsoULYeU5F4XL5aFOeyTcqdUWROug==",
+  "success": true,
+  "projectFilePath": "D:\\1.Оксана\\Оксана.Шаг\\Шаг\\Visual Studio_myWrks\\SSOOp\\Mala_HW1(PR)\\Lv-691\\MalaOks_HW1\\MalaOks_HW1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Админ\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
