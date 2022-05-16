@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace hw5
+namespace Homework_5
 {
-    interface IDeveloper : IComparable<IDeveloper>
+    public interface IDeveloper : IComparable<IDeveloper>
     {
         string Tool { get; set; }
         void Create();
         void Destroy();
-            
     }
+
 }

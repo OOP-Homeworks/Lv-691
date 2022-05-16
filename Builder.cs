@@ -1,36 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace hw5
+namespace Homework_5
 {
-    class Builder:IDeveloper, IComparable<IDeveloper>
+    public class Builder: IDeveloper, IComparable<IDeveloper>
     {
         string tool;
-        public Builder()
-        {
-            tool = "unknown";
-        }
-        public Builder(string t)
-        {
-            tool = t;
-        }
+
         public string Tool
         {
-            get { return tool; }
-            set { tool = value; }
+            get { return Tool; }
+            set { Tool = value; }
         }
-        void IDeveloper.Create()
+
+        public Builder(string tool)
         {
-            Console.WriteLine($"Builder have buidt something with {tool}");
+            this.tool = tool;
         }
-        void IDeveloper.Destroy()
+
+        public void Create()
         {
-            Console.WriteLine("Builder have destroyed house");
+            Console.WriteLine("Builder with {0} can create something", tool);
+        }
+
+        public void Destroy ()
+        {
+            Console.WriteLine("Builder with {0} can destroy anything", tool);
         }
         int IComparable<IDeveloper>.CompareTo(IDeveloper other)
         {
-            return String.Compare(this.Tool, other.Tool);
+            return string.Compare(this.tool, other.Tool);
         }
     }
 }
