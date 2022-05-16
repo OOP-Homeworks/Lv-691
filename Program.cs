@@ -1,73 +1,59 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
-namespace hw6
+namespace hw7
 {
     class Program
     {
-        static int div_int(int first, int second)
-        {
-            if (second == 0) throw new DivideByZeroException();
-            return first/second;
-        }
-        static double div_double(double first, double second)
-        {
-            if (second == 0) throw new DivideByZeroException();
-            return first/second;
-        }
-            static int count= 0;
         static void Main(string[] args)
         {
-            try
+            Dictionary<string, string> PhoneBook = new Dictionary<string, string>();
+            StreamReader reader = new StreamReader(@"C:\Users\Professional\source\repos\hw7\hw7\phones.txt",System.Text.Encoding.Default);
+            string line;
+            while ((line = reader.ReadLine()) != null)
             {
-                Console.WriteLine("Enter two integers to divide");
-                int a = System.Convert.ToInt32(Console.ReadLine());
-                int b = System.Convert.ToInt32(Console.ReadLine());
-                int res = div_int(a, b);
-                Console.WriteLine($"It's equal {res}");
+                string[] data = line.Split(' ');
+                PhoneBook.Add(data[0], data[1]);
             }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            try
-            {
-                Console.WriteLine("Enter two integers with float coma to divide");
-                double x = System.Convert.ToDouble(Console.ReadLine());
-                double y = System.Convert.ToDouble(Console.ReadLine());
+            reader.Close();
 
-                double res = div_double(x, y);
-                Console.WriteLine($"It's equal {res}");
-            }
-            catch (DivideByZeroException e)
+            //1
+            using (StreamWriter writer = new StreamWriter(@"C:\Users\Professional\source\repos\hw7\hw7\onlyPhonesNumbers.txt"))
             {
-                Console.WriteLine(e.Message);
-            }
-
-            //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            List<int> array = new List<int>();
-            Console.WriteLine("Please enter 10 numbers in ascending order");
-        proces:
-            bool was_ex = false;
-            try
-            {
-                for (int i = 0; i < 10; i++)
+                foreach (var el in PhoneBook)
                 {
-                     if(was_ex)i = count;
-                    int temp = System.Convert.ToInt32(Console.ReadLine());
-                    array.Add(temp);
-                    if (i != 0 && temp <= array[i - 1] ) throw new ArgumentException();
-                    count++;
-                    if (count == 10) break;
+                    writer.WriteLine(el.Value);
                 }
             }
-            catch (ArgumentException e)
+
+            //2
+            search:
+            Console.WriteLine("Who's phone number you want to find?");
+            string find = Console.ReadLine();
+            bool is_present = false;
+            foreach(var el in PhoneBook)
             {
-                was_ex = true;
-                Console.WriteLine("Continue, but try not to break the rules");
-                goto proces;
+                if(el.Key==find)
+                {
+                    is_present = true;
+                    Console.WriteLine($"{find}'s number is {el.Value} ");
+                }
             }
-            
+            if(!is_present)
+            {
+                Console.WriteLine("This person's number doesn't exist in dataBase. Try again");
+                goto search;
+            }
+
+            //3
+            using (StreamWriter writer = new StreamWriter(@"C:\Users\Professional\source\repos\hw7\hw7\New.txt"))
+            {
+                foreach (var el in PhoneBook)
+                {
+                    writer.WriteLine("+38"+el.Value);
+                }
+            }
         }
     }
 }
