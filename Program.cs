@@ -1,58 +1,60 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 
-namespace hw7
+namespace hw8
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> PhoneBook = new Dictionary<string, string>();
-            StreamReader reader = new StreamReader(@"C:\Users\Professional\source\repos\hw7\hw7\phones.txt",System.Text.Encoding.Default);
-            string line;
-            while ((line = reader.ReadLine()) != null)
+            List<Shape> data = new List<Shape>(5);
+            Console.WriteLine("Enter 5 different shapes.");
+            int k = 0;
+            do
             {
-                string[] data = line.Split(' ');
-                PhoneBook.Add(data[0], data[1]);
-            }
-            reader.Close();
-
-            //1
-            using (StreamWriter writer = new StreamWriter(@"C:\Users\Professional\source\repos\hw7\hw7\onlyPhonesNumbers.txt"))
-            {
-                foreach (var el in PhoneBook)
+                Console.WriteLine("Enter C for circle and S for square:");
+                char mark = System.Convert.ToChar(Console.ReadLine());
+                if (mark == 'C')
                 {
-                    writer.WriteLine(el.Value);
+                    Console.WriteLine("now write name and its radius:");
+                    string temp_name = Console.ReadLine();
+                    double temp_r = System.Convert.ToDouble(Console.ReadLine());
+                    data.Add( new Circle(temp_name, temp_r));
+                    k++;
+                }
+                else if(mark=='S')
+                {
+                    Console.WriteLine("now write name and its side:");
+                    string temp_name = Console.ReadLine();
+                    double temp_s = System.Convert.ToDouble(Console.ReadLine());
+                    data.Add( new Square(temp_name, temp_s));
+                    k++;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong leter, try again:)");
                 }
             }
+            while (k < 5);
 
-            //2
-            search:
-            Console.WriteLine("Who's phone number you want to find?");
-            string find = Console.ReadLine();
-            bool is_present = false;
-            foreach(var el in PhoneBook)
+            Console.WriteLine("Your Shapes:");
+            for(var i=0; i<k; i++)
             {
-                if(el.Key==find)
-                {
-                    is_present = true;
-                    Console.WriteLine($"{find}'s number is {el.Value} ");
-                }
-            }
-            if(!is_present)
-            {
-                Console.WriteLine("This person's number doesn't exist in dataBase. Try again");
-                goto search;
+                Console.WriteLine($"{data[i].Name} \tArea: {Math.Round(data[i].Area())} \tPerimeter {Math.Round(data[i].Perimeter())} ");
             }
 
-            //3
-            using (StreamWriter writer = new StreamWriter(@"C:\Users\Professional\source\repos\hw7\hw7\New.txt"))
+            Shape maximum=data[0];
+            for (var i = 1; i < k; i++)
             {
-                foreach (var el in PhoneBook)
-                {
-                    writer.WriteLine("+38"+el.Value);
-                }
+                if (data[i].Perimeter() > maximum.Perimeter()) maximum = data[i];
+            }
+            Console.WriteLine($"Shape with largest perimeter is {maximum.Name} and it is {Math.Round(maximum.Perimeter())}");
+
+            data.Sort();
+            Console.WriteLine("Sorted Shapes:");
+            for (var i = 0; i < k; i++)
+            {
+                Console.WriteLine($"{data[i].Name} \tArea: {Math.Round(data[i].Area())} \tPerimeter {Math.Round(data[i].Perimeter())} ");
             }
         }
     }
