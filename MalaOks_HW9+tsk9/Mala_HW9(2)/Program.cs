@@ -13,16 +13,21 @@ using (StreamReader sr = new(@"D:\111.txt", System.Text.Encoding.Default))
 }
 Console.WriteLine(lst.Count);
 Regex rgx = new(@"\W");
-//List<int> count = new();
-MatchCollection mtc; //= rgx.Matches();
+MatchCollection mtc;
 foreach (var item in lst)
 {
     mtc = rgx.Matches(item);
     if (mtc.Count != 0)
     {
-        //count.Add(mtc.Count);
         Console.WriteLine(mtc.Count);
     }
 }
 
-//var qwr = lst.Where(n => n);
+Console.WriteLine("Max: " + lst.Max());
+Console.WriteLine("Min: " + lst.Min());
+Console.WriteLine("Lines containes 'var':");
+var qwr = lst.Where(n => n.Contains("var"));
+foreach (var item in qwr)
+{
+    Console.WriteLine(item);
+}
