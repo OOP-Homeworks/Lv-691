@@ -1,48 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 
-namespace hw9
+namespace hw10
 {
     class Program
     {
         static void Main(string[] args)
         {
-            StreamReader reader = new StreamReader(@"C:\Users\Professional\source\repos\hw9\hw9\Text.txt", System.Text.Encoding.Default);
-            string line;
-            List<string> array = new List<string>();
-            while((line=reader.ReadLine())!=null)
-            { 
-                array.Add(line);
-            }
-            reader.Close();
-
-            int i = 1;
-            string min = array[0];
-            string max = array[0];
-            foreach(string el in array)
+            List<Triangle> ls = new List<Triangle>(3);
+            Random r = new Random();
+            for (int i=0; i<3; i++)
             {
-                if (el.Length > max.Length) max = el;
-                if (el.Length < min.Length) min = el;
-                Console.WriteLine($"In {i++} line is {el.Count()} symbols");
+                Point a =  new Point(r.Next(-100, 100), r.Next(-100, 100));
+                Point b = new Point(r.Next(-100, 100), r.Next(-100, 100));
+                Point c = new Point(r.Next(-100, 100), r.Next(-100, 100));
+                ls.Add(new Triangle(a, b, c));
             }
-            Console.WriteLine();
-
-            Console.WriteLine($"The largest line: {max}");
-            Console.WriteLine($"The smalest line: {min}\n");
-
-            var results = from c in array
-               where c.Contains("now")
-               select c;
-
-            foreach (var el in results)
+            try
             {
-                Console.WriteLine(el);
+                Console.WriteLine($"First:\nArea: {Math.Round(ls[0].Area())} Perimeter: {Math.Round(ls[0].Perimeter())}");
+                Console.WriteLine($"Second:\nArea: {Math.Round(ls[1].Area())} Perimeter: {Math.Round(ls[1].Perimeter())}");
+                Console.WriteLine($"Third:\nArea: {Math.Round(ls[2].Area())} Perimeter: {Math.Round(ls[2].Perimeter())}");
             }
+            catch(ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
 
         }
-
     }
 }
-
