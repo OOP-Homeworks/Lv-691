@@ -1,0 +1,13 @@
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/bin/Debug/netcoreapp3.1/Homework_10.deps.json
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/bin/Debug/netcoreapp3.1/Homework_10.runtimeconfig.json
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/bin/Debug/netcoreapp3.1/Homework_10.runtimeconfig.dev.json
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/bin/Debug/netcoreapp3.1/Homework_10.dll
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/bin/Debug/netcoreapp3.1/Homework_10.pdb
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/obj/Debug/netcoreapp3.1/Homework_10.csproj.AssemblyReference.cache
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/obj/Debug/netcoreapp3.1/Homework_10.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/obj/Debug/netcoreapp3.1/Homework_10.AssemblyInfoInputs.cache
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/obj/Debug/netcoreapp3.1/Homework_10.AssemblyInfo.cs
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/obj/Debug/netcoreapp3.1/Homework_10.csproj.CoreCompileInputs.cache
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/obj/Debug/netcoreapp3.1/Homework_10.dll
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/obj/Debug/netcoreapp3.1/Homework_10.pdb
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10/obj/Debug/netcoreapp3.1/Homework_10.genruntimeconfig.cache

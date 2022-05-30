@@ -1,0 +1,5 @@
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10Test/obj/Debug/netcoreapp3.1/Homework_10Test.csproj.AssemblyReference.cache
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10Test/obj/Debug/netcoreapp3.1/Homework_10Test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10Test/obj/Debug/netcoreapp3.1/Homework_10Test.AssemblyInfoInputs.cache
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10Test/obj/Debug/netcoreapp3.1/Homework_10Test.AssemblyInfo.cs
+/Users/chynchenkosvitlana/Desktop/Homework_10/Homework_10Test/obj/Debug/netcoreapp3.1/Homework_10Test.csproj.CoreCompileInputs.cache
