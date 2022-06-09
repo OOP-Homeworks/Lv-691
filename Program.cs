@@ -1,23 +1,24 @@
 ﻿using System;
+using System.IO;
+using System.Xml.Serialization;
 
-namespace hw11
+namespace hw4
 {
-    public delegate void Del(int n);
     class Program
     {
         static void Main(string[] args)
         {
-            Student st = new Student();
-            st.Name = "Mary";
-            Parent father = new Parent();
-            Buh stypendia = new Buh();
-            Del f = father.markCh;
-            Del s = stypendia.Stypendia;
+            
+            Person per = new Person("Richard", new DateTime(2006,10,23));
+            XmlSerializer xmlser = new XmlSerializer(typeof(Person));
+            Stream serialStream = new FileStream("person.xml", FileMode.Create);
+            xmlser.Serialize(serialStream, per);
+            serialStream.Close();
 
-            st.MarkChange += f;
-            st.MarkChange += s;
-            st.AddMark(99);
-            st.AddMark(90);
+
+            serialStream = new FileStream("person.xml", FileMode.Open);
+            Person per2 = xmlser.Deserialize(serialStream) as Person;
+            Console.WriteLine(per2.ToString());
         }
     }
 }
